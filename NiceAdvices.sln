@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NiceAdvices.Core", "NiceAdv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NiceAdvices.Infrastructure", "NiceAdvices.Infrastructure\NiceAdvices.Infrastructure.csproj", "{CC607E91-B7CC-4325-B6E6-1D792C9CCEC9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NiceAdvices.CrossCutting", "NiceAdvices.CrossCutting\NiceAdvices.CrossCutting.csproj", "{D411C599-9710-47AE-A74E-47CA7D4526F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{CC607E91-B7CC-4325-B6E6-1D792C9CCEC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC607E91-B7CC-4325-B6E6-1D792C9CCEC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC607E91-B7CC-4325-B6E6-1D792C9CCEC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D411C599-9710-47AE-A74E-47CA7D4526F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D411C599-9710-47AE-A74E-47CA7D4526F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D411C599-9710-47AE-A74E-47CA7D4526F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D411C599-9710-47AE-A74E-47CA7D4526F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
