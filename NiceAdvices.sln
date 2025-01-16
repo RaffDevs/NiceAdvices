@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NiceAdvices.Infrastructure"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NiceAdvices.CrossCutting", "NiceAdvices.CrossCutting\NiceAdvices.CrossCutting.csproj", "{D411C599-9710-47AE-A74E-47CA7D4526F8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NiceAdvices.Web", "NiceAdvices.Web\NiceAdvices.Web.csproj", "{57C8761A-DC13-4DC6-A668-383A5B85DD3B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{D411C599-9710-47AE-A74E-47CA7D4526F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D411C599-9710-47AE-A74E-47CA7D4526F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D411C599-9710-47AE-A74E-47CA7D4526F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57C8761A-DC13-4DC6-A668-383A5B85DD3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57C8761A-DC13-4DC6-A668-383A5B85DD3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57C8761A-DC13-4DC6-A668-383A5B85DD3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57C8761A-DC13-4DC6-A668-383A5B85DD3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
