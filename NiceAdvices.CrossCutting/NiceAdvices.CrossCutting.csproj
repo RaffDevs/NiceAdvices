@@ -14,6 +14,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\NiceAdvices.Infrastructure\NiceAdvices.Infrastructure.csproj" />
+      <ProjectReference Include="..\NiceAdvives.Application\NiceAdvives.Application.csproj" />
     </ItemGroup>
 
 </Project>

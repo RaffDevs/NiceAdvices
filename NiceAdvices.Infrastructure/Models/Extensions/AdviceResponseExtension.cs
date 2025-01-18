@@ -9,7 +9,7 @@ public static class AdviceResponseExtension
     {
         return new Advice
         {
-            Code = adviceServiceDTO.Advice.Code,
+            Code = adviceServiceDTO.Advice.Code.ToString(),
             Text = adviceServiceDTO.Advice.Advice
         };
     }

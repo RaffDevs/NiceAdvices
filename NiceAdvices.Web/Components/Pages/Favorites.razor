@@ -1,0 +1,25 @@
+@page "/Favorites"
+
+<PageTitle>Favorite Advices</PageTitle>
+<MudGrid Spacing="12">
+    <MudItem xs="12" Class="mt-12">
+        <MudText Typo="Typo.h3" Align="Align.Center">Favorites</MudText>
+    </MudItem>
+    <MudItem xs="12">
+        @if (AdviceState.FavoriteAdvices.Any())
+        {
+        @foreach (var advice in AdviceState.FavoriteAdvices)
+        {
+        <AdviceCard
+            Advice="advice"
+            StyleClass="my-4"
+            OnDelete="() => HandleDelete(advice)"
+        />
+        }
+        }
+        else
+        {
+        <MudProgressLinear Color="Color.Primary" Indeterminate="true" Class="my-7"/>
+        }
+    </MudItem>
+</MudGrid>

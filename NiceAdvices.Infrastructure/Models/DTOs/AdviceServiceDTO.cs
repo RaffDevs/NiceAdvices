@@ -11,7 +11,7 @@ public record AdviceServiceDTO
 public record AdviceDTO
 {
     [JsonPropertyName("id")]
-    public string Code { get; init; }
+    public int Code { get; init; }
     
     [JsonPropertyName("advice")]
     public string Advice { get; init; }

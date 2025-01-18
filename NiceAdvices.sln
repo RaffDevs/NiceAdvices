@@ -8,6 +8,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NiceAdvices.CrossCutting", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NiceAdvices.Web", "NiceAdvices.Web\NiceAdvices.Web.csproj", "{57C8761A-DC13-4DC6-A668-383A5B85DD3B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NiceAdvives.Application", "NiceAdvives.Application\NiceAdvives.Application.csproj", "{D70AFB7B-A86A-46B9-A500-BC7EE43A3AB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NiceAdvices.Shared", "NiceAdvices.Shared\NiceAdvices.Shared.csproj", "{336E3D22-39AF-432B-B59C-50787693B809}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +34,13 @@ Global
 		{57C8761A-DC13-4DC6-A668-383A5B85DD3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57C8761A-DC13-4DC6-A668-383A5B85DD3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57C8761A-DC13-4DC6-A668-383A5B85DD3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D70AFB7B-A86A-46B9-A500-BC7EE43A3AB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D70AFB7B-A86A-46B9-A500-BC7EE43A3AB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D70AFB7B-A86A-46B9-A500-BC7EE43A3AB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D70AFB7B-A86A-46B9-A500-BC7EE43A3AB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{336E3D22-39AF-432B-B59C-50787693B809}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{336E3D22-39AF-432B-B59C-50787693B809}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{336E3D22-39AF-432B-B59C-50787693B809}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{336E3D22-39AF-432B-B59C-50787693B809}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
