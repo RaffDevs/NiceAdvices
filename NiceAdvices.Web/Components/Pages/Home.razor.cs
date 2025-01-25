@@ -17,6 +17,8 @@ public partial class Home : ComponentBase
     
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
+        Snackbar.Configuration.VisibleStateDuration = 1000;
+
         if (firstRender)
         {
             ToggleIsLoading();

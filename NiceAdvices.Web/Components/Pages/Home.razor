@@ -1,0 +1,43 @@
+﻿@page "/"
+@inject NavigationManager NavigationManager
+
+
+
+<PageTitle>Home</PageTitle>
+
+<MudGrid Spacing="12">
+    <MudItem xs="12" Class="mt-12">
+        <MudText Typo="Typo.h3" Align="Align.Center">Advices</MudText>
+    </MudItem>
+    <MudItem xs="12">
+        <MudPaper Class="mx-16 pa-4" Height="8rem">
+            <MudStack Row="true" Justify="Justify.Center" AlignItems="AlignItems.Center" Style="height: 100%">
+                @if (AdviceState.CurrentAdvice is null)
+                {
+                    <MudSkeleton SkeletonType="SkeletonType.Text" Animation="Animation.Wave" Width="80%"/>
+                }
+                else
+                {
+                    <MudText Align="Align.Center">@AdviceState.CurrentAdvice.Text</MudText>
+                }
+            </MudStack>
+        </MudPaper>
+        <MudStack Row="true" Justify="Justify.Center" Class="pt-4">
+            <MudIconButton OnClick="FavoriteAdvice"  Icon="@Icons.Material.Filled.Favorite" Size="Size.Medium"/>
+        </MudStack>
+    </MudItem>
+    <MudItem xs="12">
+        <MudStack Row="true" Justify="Justify.Center">
+            <MudButton Disabled="IsLoading" Color="Color.Primary" Variant="Variant.Filled" OnClick="GetNewAdvice" Style="width: 8rem">
+                @if (IsLoading)
+                {
+                    <MudProgressCircular Class="ms-n1 white-text" Size="Size.Small" Indeterminate="true"/>
+                }
+                else
+                {
+                    <MudText> Get Advice</MudText>
+                }
+            </MudButton>
+        </MudStack>
+    </MudItem>
+</MudGrid>

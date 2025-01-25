@@ -1,0 +1,25 @@
+@page "/translate/{adviceid:int}"
+
+<MudGrid Spacing="12">
+    <MudItem xs="12" Class="mt-12">
+        <MudText Typo="Typo.h3" Align="Align.Center">Translate</MudText>
+    </MudItem>
+    <MudItem xs="12">
+        <MudCard>
+            <MudCardContent >
+                <MudStack AlignItems="AlignItems.Center">
+                    @if (IsProcessing)
+                    {
+                        <MudText Typo="Typo.body1">Traduzindo...</MudText>
+                        <MudProgressLinear Color="Color.Primary" Indeterminate="true"  />
+                    }
+                    else
+                    {
+                        <MudText Typo="Typo.body1">@Advice.Text</MudText>
+                    }
+                </MudStack>
+            </MudCardContent>
+        </MudCard>
+        <MudIconButton OnClick="GoBack" Class="mt-4" Icon="@Icons.Material.Filled.ArrowBack" />
+    </MudItem>
+</MudGrid>

@@ -1,0 +1,34 @@
+<MudHidden Breakpoint="Breakpoint.MdAndUp">
+    <MudDialog Style="width: 80%; height: 50%">
+        <TitleContent>New Advice</TitleContent>
+        <DialogContent>
+            <MudStack >
+                <EditForm Model="@Model">
+                    <DataAnnotationsValidator/>
+                    <MudTextField @bind-Value="Model.Text" T="string" Label="Your Advice" For="@(() => Model.Author)"/>
+                    <MudTextField @bind-Value="Model.Author" T="string" Label="Author" For="@(() => Model.Author)"/>
+                </EditForm>
+            </MudStack>
+        </DialogContent>
+        <DialogActions>
+            <MudButton OnClick="() => { }" ButtonType="ButtonType.Submit" Class="green-text">OK</MudButton>
+            <MudButton OnClick="Cancel" Class="red-text">CANCEL</MudButton>
+        </DialogActions>
+    </MudDialog>
+</MudHidden>
+
+<MudHidden Breakpoint="Breakpoint.SmAndDown">
+    <MudDialog Style="width:40%; height: 40%">
+        <TitleContent>New Advice</TitleContent>
+        <DialogContent>
+            <MudStack >
+                <MudTextField @bind-Value="Model.Text" T="string" Label="Your Advice" For="@(() => Model.Text)"/>
+                <MudTextField @bind-Value="Model.Author" T="string" Label="Author" For="@(() => Model.Author)"/>
+            </MudStack>
+        </DialogContent>
+        <DialogActions>
+            <MudButton OnClick="() => { }" Class="green-text">OK</MudButton>
+            <MudButton OnClick="Cancel" Class="red-text">CANCEL</MudButton>
+        </DialogActions>
+    </MudDialog>
+</MudHidden>

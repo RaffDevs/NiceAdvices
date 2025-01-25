@@ -1,4 +1,4 @@
-@page "/Favorites"
+@page "/favorites"
 
 <PageTitle>Favorite Advices</PageTitle>
 <MudGrid Spacing="12">
@@ -8,18 +8,31 @@
     <MudItem xs="12">
         @if (AdviceState.FavoriteAdvices.Any())
         {
-        @foreach (var advice in AdviceState.FavoriteAdvices)
-        {
-        <AdviceCard
-            Advice="advice"
-            StyleClass="my-4"
-            OnDelete="() => HandleDelete(advice)"
-        />
-        }
+            @foreach (var advice in AdviceState.FavoriteAdvices)
+            {
+                <AdviceCard 
+                    Advice="advice" 
+                    StyleClass="my-4"
+                    OnDelete="() => HandleDelete(advice)"
+                />
+            }
         }
         else
         {
-        <MudProgressLinear Color="Color.Primary" Indeterminate="true" Class="my-7"/>
+            <MudProgressLinear Color="Color.Primary" Indeterminate="true" Class="my-7"/>
         }
     </MudItem>
 </MudGrid>
+<MudElement HtmlTag="div" Class="fab-container">
+    <MudFab OnClick="HandleAdviceDialog" Color="Color.Primary" StartIcon="@Icons.Material.Filled.Add" />
+</MudElement>
+
+
+<style>
+    .fab-container {
+        position: fixed;
+        bottom: 16px;
+        right: 16px;
+        z-index: 10;
+    }
+</style>

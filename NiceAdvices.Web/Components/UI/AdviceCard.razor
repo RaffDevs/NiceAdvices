@@ -1,0 +1,12 @@
+
+<MudCard Class="@StyleClass">
+    <MudCardContent>
+        <MudText Typo="Typo.body2">@Advice.Text</MudText>
+    </MudCardContent>
+    <MudCardActions >
+        <MudStack Row="true" Justify="Justify.SpaceBetween" Style="width: 100%">
+            <MudIconButton OnClick="ExecuteOnTranslate" Icon="@Icons.Material.Filled.Translate" Variant="Variant.Text" Color="Color.Primary">Learn More</MudIconButton>
+            <MudIconButton OnClick="ExecuteOnDelete" Icon="@Icons.Material.Filled.Delete" Variant="Variant.Text" Color="Color.Error">Learn More</MudIconButton>
+        </MudStack>
+    </MudCardActions>
+</MudCard>
